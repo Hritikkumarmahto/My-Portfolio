@@ -53,26 +53,6 @@ Passionate about crafting visually stunning and user-friendly websites. Let's br
 - **Degree:** Bachelor of Engineering in Computer Science
 - **Duration:** 2021-2025
 
-#### Chandigarh University
-- **Degree:** Bachelor of Engineering
-- **Duration:** 2021-2025
-
-#### Chandigarh University
-- **Degree:** BE
-- **Duration:** 2021-2025
-
-### Employment
-#### Google
-- **Role:** Full Stack Developer
-- **Duration:** 2021-2025
-
-#### Microsoft
-- **Role:** Software Developer
-- **Duration:** 2021-2025
-
-#### Meta
-- **Role:** Frontend Developer
-- **Duration:** 2021-2025
 
 ## Skills
 ### Frontend
