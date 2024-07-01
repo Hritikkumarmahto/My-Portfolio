@@ -8,6 +8,11 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-------------------Swiper Section-------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Poerfolio Website</title>
   </head>
@@ -332,15 +337,40 @@
       <section class="work section container" id="Portfolio">
         <h2 class="section__title">Work_</h2>
         <div class="project__categories">
-          <button class="category__btn text-xs active-work">ALL</button>
-          <button class="category__btn text-xs active-work">Mobile Apps</button>
-          <button class="category__btn text-xs active-work">websites</button>
-          <button class="category__btn text-xs active-work">
+          <button class="category__btn text-xs active-work" data-filter="all">
+            ALL
+          </button>
+          <button class="category__btn text-xs active-work" data-filter=".app">
+            Mobile Apps
+          </button>
+          <button class="category__btn text-xs active-work" data-filter=".web">
+            websites
+          </button>
+          <button class="category__btn text-xs active-work" data-filter=".ml">
             Machine learning
           </button>
         </div>
         <div class="project__container grid">
-          <div class="project__item grid">
+          <div class="project__item grid mix all">
+            <img src="Assets\Laptop.png" />
+            <div class="project__data">
+              <h3 class="project__title text-lg">All</h3>
+              <p class="project__description">
+                Created a dictionary app so a user can lern english words and
+              </p>
+              <h4 class="project__stack text-xs">USED STACK</h4>
+              <ul class="tags text-sm">
+                <li>JAVA</li>
+                <li>XML</li>
+                <li>ANDROID STUDIO</li>
+                <li>MAIN</li>
+                <li>LLM</li>
+                <li>KING</li>
+              </ul>
+              <a href="" class="project__link text-sm">www.app.com</a>
+            </div>
+          </div>
+          <div class="project__item grid mix app">
             <img src="Assets\Laptop.png" />
             <div class="project__data">
               <h3 class="project__title text-lg">Dictionary Application</h3>
@@ -359,10 +389,10 @@
               <a href="" class="project__link text-sm">www.app.com</a>
             </div>
           </div>
-          <div class="project__item grid">
+          <div class="project__item grid mix web">
             <img src="Assets\Laptop.png" />
             <div class="project__data">
-              <h3 class="project__title text-lg">Dictionary Application</h3>
+              <h3 class="project__title text-lg">Portfolio</h3>
               <p class="project__description">
                 Created a dictionary app so a user can lern english words and
               </p>
@@ -378,48 +408,10 @@
               <a href="" class="project__link text-sm">www.app.com</a>
             </div>
           </div>
-          <div class="project__item grid">
+          <div class="project__item grid mix ml">
             <img src="Assets\Laptop.png" />
             <div class="project__data">
-              <h3 class="project__title text-lg">Dictionary Application</h3>
-              <p class="project__description">
-                Created a dictionary app so a user can lern english words and
-              </p>
-              <h4 class="project__stack text-xs">USED STACK</h4>
-              <ul class="tags text-sm">
-                <li>JAVA</li>
-                <li>XML</li>
-                <li>ANDROID STUDIO</li>
-                <li>MAIN</li>
-                <li>LLM</li>
-                <li>KING</li>
-              </ul>
-              <a href="" class="project__link text-sm">www.app.com</a>
-            </div>
-          </div>
-          <div class="project__item grid">
-            <img src="Assets\Laptop.png" />
-            <div class="project__data">
-              <h3 class="project__title text-lg">Dictionary Application</h3>
-              <p class="project__description">
-                Created a dictionary app so a user can lern english words and
-              </p>
-              <h4 class="project__stack text-xs">USED STACK</h4>
-              <ul class="tags text-sm">
-                <li>JAVA</li>
-                <li>XML</li>
-                <li>ANDROID STUDIO</li>
-                <li>MAIN</li>
-                <li>LLM</li>
-                <li>KING</li>
-              </ul>
-              <a href="" class="project__link text-sm">www.app.com</a>
-            </div>
-          </div>
-          <div class="project__item grid">
-            <img src="Assets\Laptop.png" />
-            <div class="project__data">
-              <h3 class="project__title text-lg">Dictionary Application</h3>
+              <h3 class="project__title text-lg">Machnie learning</h3>
               <p class="project__description">
                 Created a dictionary app so a user can lern english words and
               </p>
@@ -437,8 +429,183 @@
           </div>
         </div>
       </section>
+      <!----------------------testMonials-------------------->
+      <section class="testimonials section">
+        <div class="testimonial__bg">
+          <div class="testimonial__icon">
+            <i class="ri-double-quotes-r"></i>
+          </div>
+          <div class="swiper testimonial__container container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonial__item">
+                <h3 class="author__name text-lg">Hritik Kumar Mahto</h3>
+                <p class="author__project">Portfolio websites</p>
+                <div class="ruler"></div>
+                <p class="testimonial__description text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda laboriosam ducimus sapiente blanditiis quasi,
+                  ratione dolorum vel necessitatibus ab quod, reprehenderit vero
+                  exercitationem, sunt non. Labore, incidunt similique! Magni,
+                  atque?
+                </p>
+              </div>
+              <div class="swiper-slide testimonial__item">
+                <h3 class="author__name text-lg">Hritik Kumar Mahto</h3>
+                <p class="author__project">Portfolio websites</p>
+                <div class="ruler"></div>
+                <p class="testimonial__description text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda laboriosam ducimus sapiente blanditiis quasi,
+                  ratione dolorum vel necessitatibus ab quod, reprehenderit vero
+                  exercitationem, sunt non. Labore, incidunt similique! Magni,
+                  atque?
+                </p>
+              </div>
+              <div class="swiper-slide testimonial__item">
+                <h3 class="author__name text-lg">Hritik Kumar Mahto</h3>
+                <p class="author__project">Portfolio websites</p>
+                <div class="ruler"></div>
+                <p class="testimonial__description text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda laboriosam ducimus sapiente blanditiis quasi,
+                  ratione dolorum vel necessitatibus ab quod, reprehenderit vero
+                  exercitationem, sunt non. Labore, incidunt similique! Magni,
+                  atque?
+                </p>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <img src="Assets\arrow-next.svg" alt="" />
+            </div>
+            <div class="swiper-button-prev">
+              <img src="Assets\arrow-prev.svg" alt="" />
+            </div>
+            <div class="swiper-pagination">
+              <img src="Assets\arrow-next.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------------Blog------------------------>
+      <section class="blog section container" id="blog">
+        <h2 class="section__title">Latest Post_</h2>
+        <div class="posts__container grid">
+          <div class="post__card">
+            <img src="Assets\blog-1.png" alt="" class="post__img" />
+            <div class="post__content">
+              <p class="post__date text-xs">22 jan 2024</p>
+              <h3 class="post__title text-sm">How to use css processor</h3>
+              <p class="post__Description text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, architecto. Modi, exercitationem dolorum quas aut
+                expedita ex, et porro hic praesentium molestias reiciendis
+                dolorem libero iusto magni, recusandae enim voluptatibus.
+              </p>
+            </div>
+          </div>
+          <div class="post__card">
+            <img src="Assets\blog-2.png" alt="" class="post__img" />
+            <div class="post__content">
+              <p class="post__date text-xs">22 jan 2024</p>
+              <h3 class="post__title text-sm">How to use css processor</h3>
+              <p class="post__Description text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, architecto. Modi, exercitationem dolorum quas aut
+                expedita ex, et porro hic praesentium molestias reiciendis
+                dolorem libero iusto magni, recusandae enim voluptatibus.
+              </p>
+            </div>
+          </div>
+          <div class="post__card">
+            <img src="Assets\blog-3.png" alt="" class="post__img" />
+            <div class="post__content">
+              <p class="post__date text-xs">22 jan 2024</p>
+              <h3 class="post__title text-sm">How to use css processor</h3>
+              <p class="post__Description text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, architecto. Modi, exercitationem dolorum quas aut
+                expedita ex, et porro hic praesentium molestias reiciendis
+                dolorem libero iusto magni, recusandae enim voluptatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------ Contact ----------------------->
+      <section class="contact section" id="contact">
+        <div class="contact__content container">
+          <h2 class="section__title">Get in touch_</h2>
+          <div class="contact__container grid">
+            <div class="contact__info">
+              <dl class="contact__list">
+                <dt>Phone:</dt>
+                <dd>+91 9693635492</dd>
+                <dt>Linkdin:</dt>
+                <dd>Hritik Kumar Mahto</dd>
+                <dt>Email:</dt>
+                <dd>hritikkumarmahto1985</dd>
+              </dl>
+              <ul class="contact__socials">
+                <li>
+                  <a href="" class="contact__social-link">Github</a>
+                </li>
+                <li>
+                  <a href="" class="contact__social-link">Linkedin</a>
+                </li>
+                <li>
+                  <a href="" class="contact__social-link">LEETCODE</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact__form">
+              <p class="contact__form-title">Or just write me a letter_</p>
+              <form action="" id="contact-form">
+                <div class="contact__input-div">
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    class="contact__input"
+                    id="contact-name"
+                  />
+                </div>
+                <div class="contact__input-div">
+                  <input
+                    type="email"
+                    placeholder="Your e-mail"
+                    class="contact__input"
+                    id="contact-email"
+                  />
+                </div>
+                <div class="contact__input-div">
+                  <textarea
+                    placeholder="Type then message here"
+                    class="contact__input textarea"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <p class="contact__message text-sm" id="contact-message">
+                  Message
+                </p>
+                <button type="submit" class="contact__button">SEND</button>
+              </form>
+              <p class="footer__copy">
+                &copy 2024 Hritik Kumar Mahto.All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="D:\MY portfolio\mixup.js"></script>
+    <script src="mixup.js"></script>
+    <!----------Swiper js -------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!------------Email.js---------->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
